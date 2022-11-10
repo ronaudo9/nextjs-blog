@@ -1,5 +1,5 @@
 ---
-title: 'いつ'
+title: 'いつ Static Generation または Server-side Rendering を使うか？'
 
 date: '2020-01-02'
 ---

@@ -1,3 +1,7 @@
+---
+title: '事前レンダリングの２つの形'
+date: '2020-01-01'
+---
 Next.js には 2 つの事前レンダリングがあります。Static Generation と Server-side Rendering です。この 2 つの違いは、そのページの HTML がいつ生成されるかです。
 
 Static Generation はビルド時に HTML を生成します。事前に生成された HTML はリクエストされるたびに 再利用 されます。

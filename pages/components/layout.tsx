@@ -67,6 +67,7 @@ export default function Layout({
         )}
       </header>
       <main>{children}</main>
+      {/* Layoutコンポーネントがラッピングしている中身を表示 */}
       {!home && (
         <div className={styles.backToHome}>
           <Link legacyBehavior href="/">

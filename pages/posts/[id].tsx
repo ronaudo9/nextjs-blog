@@ -5,6 +5,7 @@ import utilStyles from '/Users/kojimanaoyuki/src/nextjs-blog/styles/utils.module
 import { GetStaticProps } from "next";
 
 export const getStaticProps: GetStaticProps = async({params}) => {
+  //関数を呼び出している箇所でもawaitを使用しなければならない
   const postData = await getPostData(params?.id as string);
   return {
     props: {

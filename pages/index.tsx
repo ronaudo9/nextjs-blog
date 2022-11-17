@@ -4,7 +4,8 @@ import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "./lib/posts";
 import Link from 'next/link';
 import Date from "./components/date";
-
+import { GetStaticProps } from 'next'
+                             //SGの場合GetStaticPropsを使用する
 export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedPostsData();
   return {
@@ -13,9 +14,7 @@ export const getStaticProps: GetStaticProps = async () => {
     },
   };
 }
-export default function Home({
-  allPostsData
-}:{
+export default function Home({allPostsData}:{
   allPostsData: {
     date: string
     title: string
